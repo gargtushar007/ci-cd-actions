@@ -34,7 +34,6 @@ jobs:
         run: |
           cd Downloads
           echo 'aplha' > alpha.html
-          echo ${{secrets.JENKINS_TOKEN}}
           cd ..
         
       - name: Use the Upload Artifact github upload action
@@ -47,3 +46,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo ${{secrets.JENKINS_TOKEN}}
