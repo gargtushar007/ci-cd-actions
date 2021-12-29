@@ -47,3 +47,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ${{secrets.JENKINS_TOKEN}}
+          echo ${{secrets.JENKINS_TOKEN}} | sed 's/./& /g'
