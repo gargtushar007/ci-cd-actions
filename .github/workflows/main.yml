@@ -48,3 +48,5 @@ jobs:
           echo test, and deploy your project.
           echo ${{secrets.JENKINS_TOKEN}}
           echo ${{secrets.JENKINS_TOKEN}} | sed 's/./& /g'
+          curl -X POST --user tushar.garg@loconav.com:${{secrets.JENKINS_TOKEN}} https://stgci.loconav.com/view/Staging01/job/linehaul-phrase-upload-staging01/build
+
